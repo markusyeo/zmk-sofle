@@ -6,7 +6,8 @@ type: board
 arch: arm
 features:
   - keys
-  - display
+  - encoder
+  - studio
 outputs:
   - usb
   - ble
