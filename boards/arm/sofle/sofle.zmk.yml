@@ -2,8 +2,6 @@ file_format: "1"
 id: sofle
 name: Sofle
 url: https://github.com/markusyeo/zmk-sofle
-requires: [pro_micro]
-exposes: [i2c_oled]
 type: board
 arch: arm
 features:
