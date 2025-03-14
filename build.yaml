@@ -2,7 +2,7 @@
 include:
   - board: sofle_right
   - board: sofle_left
-    snippet: studio-rpc-usb-uart
+    snippet: studio-rpc-usb-uart zmk-usb-logging
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
     artifact-name: sofle_studio_left
   - board: sofle_left
