@@ -13,3 +13,4 @@ outputs:
 siblings:
   - sofle_left
   - sofle_right
+exposes: [pro_micro]
