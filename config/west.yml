@@ -13,7 +13,7 @@ manifest:
    #   remote: gpeye
    #    revision: main 
     - name: sofle
-      url: https://github.com/markus/zmk-sofle
+      url: https://github.com/markusyeo/zmk-sofle
       revision: main
     - name: zmk
       remote: zmkfirmware
