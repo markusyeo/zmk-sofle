@@ -26,7 +26,6 @@
         zmk,underglow = &led_strip;
         zmk,physical-layout = &sofle_layout;
         zmk,backlight = &backlight;
-        zephyr,display = &oled;
     };
 
 	left_encoder: encoder_left {
@@ -108,6 +107,9 @@
 
 &usbd {
     status = "okay";
+    cdc_acm_uart: cdc_acm_uart {
+        compatible = "zephyr,cdc-acm-uart";
+    };
 };
 
 &flash0 {
@@ -170,7 +172,6 @@
     };
 };
 
-
 &pwm0 {
     status = "okay";
     pinctrl-0 = <&pwm0_default>;
@@ -183,27 +184,10 @@ zephyr_udc0: &usbd {
     status = "okay";
 };
 
-&i2c0 {
-	status = "okay";
-
-	compatible = "nordic,nrf-twi";
-	pinctrl-0 = <&i2c0_default>;
-	pinctrl-1 = <&i2c0_sleep>;
-	pinctrl-names = "default", "sleep";
-    
-	oled: ssd1306@3c {
-		compatible = "solomon,ssd1306fb";
-		reg = <0x3c>;
-		label = "DISPLAY";
-		width = <128>;
-		height = <32>;
-		segment-offset = <0>;
-		page-offset = <0>;
-		display-offset = <0>;
-		multiplex-ratio = <31>;
-		segment-remap;
-		com-invdir;
-		com-sequential;
-		prechargep = <0x22>;
-	};
+nice_view_spi: &spi0 {
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi0_default>;
+    pinctrl-1 = <&spi0_sleep>;
+    pinctrl-names = "default", "sleep";
+    cs-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
 };

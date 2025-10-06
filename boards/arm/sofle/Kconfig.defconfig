@@ -3,9 +3,6 @@
 # SPDX-License-Identifier: MIT
 #
 
-config PINCTRL
-    default y
-
 if BOARD_SOFLE_LEFT
 
 config ZMK_KEYBOARD_NAME

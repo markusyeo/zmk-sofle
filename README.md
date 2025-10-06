@@ -1,22 +1,24 @@
-- [中文](README.md)
-- [English](README_EN.md)
+# Sofle
 
-# 更新列表
+## Update List
 
 - 2024/12/21
-  1. 增加zmk-studio支持（只需要刷新左手即可使用）。
+  1. Added support for zmk-studio (just refresh the left hand to use).
 - 2024/10/24
-  1. 修改供电模式，功耗降低。
-  2. 修正RGB供电自动关闭的功能。
+  1. Modified power supply mode to reduce power consumption.
+  2. Fixed the automatic shut-off feature for RGB power supply.
+- 2025/8/22
+  1. update the soft off.When you press the keys Q, S and Z simultaneously and hold them for 2 seconds, the keyboard will enter a deep sleep state and cannot be awakened by pressing the keys. This function can be used when carrying it outside. The activation method is to press the reset switch once.
+  2. This month, I also updated the ultra-thin versions of the corne and sofle cases. The frame and base plate have been thickened, and the opening of the reset switch has been adjusted, so that the reset switch can be easily pressed. At present, we are still conceptualizing how to design the shell with an inclined bracket.If you have carefully examined a PCB, you will notice that there are reserved interfaces for expansion IO. I wonder if anyone has been able to utilize them,I will try it！
+  3. The GIF animations on the right-hand keyboard screen have been removed, which will significantly reduce the power consumption of the right-hand keyboard.
 
-> 如果您的键盘于10月24日之前更新，请更新最新的固件。
-> 
----
-# 联系我
+> If your  sofle was updated before 2025/8/22, please update to the latest firmware.
+>
 
-如需3D打印的模型文件或者键盘有任何异常和故障，请联系380465425@qq.com
+## Contact Me
 
-# Sofle键位图
+For 3D printed model files or any issues and malfunctions with the keyboard, please contact [380465425@qq.com](mailto:380465425@qq.com)
 
-<img src="keymap-drawer/sofle.svg" >
+## Sofle Keymap
 
+![Sofle键位图](keymap-drawer/sofle.svg)
